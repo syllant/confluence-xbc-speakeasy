@@ -29,6 +29,7 @@ jQuery(document).ready(function()
   // Strange behaviour with split bar, which has z-index=10 but stays above is menu z-index=11!?
   jQuery('#splitter > div.vsplitbar').css('z-index', 5);
 
+  // Build menu items under breadcrumb (first menus)
   function buildBreadcrumbPageMenuItems(spaceKey, parentId, level)
   {
     fetchPages(spaceKey, parentId, function(pages)
