@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.syllant.atlassian.confluence.plugins</groupId>
+  <artifactId>xbc-speakeasy</artifactId>
+  <version>1.0</version>
+
+  <organization>
+    <name>Sylvain FRANCOIS</name>
+    <url>syllant@gmail.com</url>
+  </organization>
+
+  <name>eXtended Breadcrumb for Confluence</name>
+  <description>Adds tree menus to breadcrumb elements to make navigation easier between pages.</description>
+  <packaging>atlassian-plugin</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.atlassian.confluence</groupId>
+      <artifactId>confluence</artifactId>
+      <version>${confluence.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.atlassian.maven.plugins</groupId>
+        <artifactId>maven-confluence-plugin</artifactId>
+        <version>3.3-m7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <productVersion>${confluence.version}</productVersion>
+          <productDataVersion>${confluence.data.version}</productDataVersion>
+          <compressResources>false</compressResources>
+          <pluginArtifacts>
+            <pluginArtifact>
+              <groupId>com.atlassian.labs</groupId>
+              <artifactId>speakeasy-plugin</artifactId>
+              <version>0.8.1</version>
+            </pluginArtifact>
+          </pluginArtifacts>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <configuration>
+          <outputDirectory>target/classes</outputDirectory>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <properties>
+    <confluence.version>3.5.3</confluence.version>
+    <confluence.data.version>3.1</confluence.data.version>
+  </properties>
+
+</project>

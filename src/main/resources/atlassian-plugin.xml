@@ -1,0 +1,18 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+  </plugin-info>
+
+  <scoped-web-resource key="${project.artifactId}">
+    <resource type="download" name="${project.artifactId}.js" location="js/main.js"/>
+    <resource type="download" name="jquery-hoverintent-plugin.js" location="js/jquery-hoverintent-plugin.js"/>
+    <resource type="download" name="${project.artifactId}.css" location="css/main.css"/>
+    <context>dashboard</context>
+    <context>page</context>
+    <context>space</context>
+  </scoped-web-resource>
+
+</atlassian-plugin>

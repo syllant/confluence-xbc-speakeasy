@@ -1,0 +1,69 @@
+#breadcrumbs ul.xbc-menu {
+  background-color:#ffffff;
+  color:#036;
+  border:1px solid #036;
+  display:none;
+  position:absolute;
+  z-index:11; /* above vsplitbar */
+  padding:0;
+}
+
+#breadcrumbs ul.xbc-menu ul.xbc-menu {
+  padding-left:10px;
+  border:none;
+  position:relative;
+}
+
+#breadcrumbs ul.xbc-menu li {
+  display:block;
+  float:none;
+  padding:0 3px 0 5px;
+  background:none;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-toggle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  text-align: left;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-toggle-plus {
+  background: url(../../../images/icons/tree_plus.gif) no-repeat scroll 0 3px;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-toggle-minus {
+  background: url(../../../images/icons/tree_minus.gif) no-repeat scroll 0 3px;
+}
+
+#breadcrumbs ul.xbc-menu li a {
+  color:#036;
+  text-decoration:none;
+  padding-left:2px;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-icon {
+  width:16px;
+  height:16px;
+  display:inline-block;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-space {
+  background: url('../../../images/sprites/icons.png') no-repeat -160px top;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-homepage {
+  background: url(../../../images/icons/home_16.gif) no-repeat;
+}
+
+#breadcrumbs ul.xbc-menu li span.xbc-page {
+  background: url(../../../images/icons/docs_16.gif) no-repeat 0 50%;
+}
+
+#breadcrumbs ul.xbc-menu li:hover > span.xbc-title > a {
+  text-decoration:underline;
+}
+
+#breadcrumbs ul.xbc-menu-space {
+
+}
