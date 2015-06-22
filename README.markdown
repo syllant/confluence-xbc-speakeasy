@@ -1,3 +1,7 @@
+> -
+> Now deprecated in favor of https://marketplace.atlassian.com/plugins/org.syllant.atlassian.confluence.plugins.bnb
+> -
+
 # eXtended Breadcrumb for Confluence
 eXtended Breadcrumb for Confluence (XBC) is a plugin for Confluence which enhances the standard breadcrumb to make navigation easier.
 
